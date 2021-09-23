@@ -9,3 +9,36 @@ body{
 	border-radius: 15px;
 	border: 3px solid white;
 }
+
+.image{
+}
+
+#btn_profile{
+	position:absolute; 
+	top: 0;
+	left: 0;
+}
+
+#btn_history{
+	position:absolute; 
+	top: 0;
+	right: 0;
+}
+
+#btn_messages{
+	position:absolute; 
+	bottom: 0;
+	right: 0;
+}
+
+#btn_config{
+	position:absolute; 
+	bottom: 0;
+	left: 0;
+}
+
+#btn_gotohistory{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
