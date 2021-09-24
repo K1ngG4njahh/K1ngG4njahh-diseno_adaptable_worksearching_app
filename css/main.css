@@ -71,7 +71,8 @@ body{
 #goback{
 	position: absolute;
 	top: 2%;
-	left: 2%;
+	left: 1%;
+	width: 45px;
 }
 
 #enzochat{
