@@ -13,32 +13,56 @@ body{
 .image{
 }
 
-#btn_profile{
+#profile{
 	position:absolute; 
 	top: 0;
 	left: 0;
 }
 
-#btn_history{
+#history{
 	position:absolute; 
 	top: 0;
 	right: 0;
 }
 
-#btn_messages{
+#messages{
 	position:absolute; 
 	bottom: 0;
 	right: 0;
 }
 
-#btn_config{
+#config{
 	position:absolute; 
 	bottom: 0;
 	left: 0;
 }
 
-#btn_gotohistory{
+#workinfo{
 	position: absolute;
-	bottom: 0;
+	top: 60%;
+	left: 40%;
+}
+
+#likedjob{
+	position: absolute;
+	top: 60%;
+	left: 60%;
+}
+
+#checkedjob{
+	position: absolute;
+	top: 70%;
+	left: 55%;
+}
+
+#dislikedjob{
+	position: absolute;
+	top: 70%;
+	left: 45%;
+}
+
+#goback{
+	position: absolute;
+	top: 0;
 	left: 0;
 }
