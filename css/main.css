@@ -13,6 +13,12 @@ body{
 .image{
 }
 
+.text{
+	width: 80%;
+	color: black;
+	border-radius: 16px;
+}
+
 #profile{
 	position:absolute; 
 	top: 2%;
@@ -66,4 +72,20 @@ body{
 	position: absolute;
 	top: 0;
 	left: 0;
+}
+
+#enzochat{
+	position: absolute;
+	left: 1%;
+	top: 20%;
+	border: 3px solid gray;
+	background-color: gray;
+}
+
+#yourchat{
+	position: absolute;
+	right: 1%;
+	top: 30%;
+	border: 3px lightgray;
+	background-color: lightgray;
 }
