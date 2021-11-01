@@ -69,10 +69,8 @@ body{
 }
 
 #goback{
-	position: absolute;
-	top: 2%;
-	left: 1%;
-	width: 45px;
+	margin: auto;
+	margin-top: 7%;
 }
 
 #enzochat{
