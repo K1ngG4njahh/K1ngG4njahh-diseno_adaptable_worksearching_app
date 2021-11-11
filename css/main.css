@@ -3,89 +3,25 @@ body{
 	margin: 0;
 	padding: 0;
 }
-.boton{
-	width: 20%;
-	height: 50px;
-	color: black;
-	border-radius: 15px;
-	border: 3px solid white;
+.container{
+	width: 100%;
+	min-height: 100vh;
+	padding-left: 8%;
+	padding-right: 8%;
+	box-sizing: border-box;
+	overflow:  hidden;
 }
-
-.image{
+.navbar{
+	width: 100%;
+	display:  flex;
+	align-items: center;
 }
-
-.text{
-	width: 80%;
-	color: black;
-	border-radius: 16px;
+.logo{
+	width: 50px;
+	cursor:  pointer;
+	margin: 30px 0;
 }
-
-#profile{
-	position:absolute; 
-	top: 2%;
-	left: 2%;
-}
-
-#history{
-	position:absolute; 
-	top: 2%;
-	right: 2%;
-}
-
-#messages{
-	position:absolute; 
-	bottom: 98%;
-	right: 98%;
-}
-
-#config{
-	position:absolute; 
-	bottom: 1%;
-	left: 1%;
-	width: 80px;
-}
-
-#workinfo{
-	position: absolute;
-	top: 60%;
-	left: 40%;
-}
-
-#likedjob{
-	position: absolute;
-	top: 60%;
-	left: 60%;
-}
-
-#checkedjob{
-	position: absolute;
-	top: 70%;
-	left: 55%;
-}
-
-#dislikedjob{
-	position: absolute;
-	top: 70%;
-	left: 45%;
-}
-
-#goback{
-	margin-left: -95%;
-	margin-bottom: 90%;
-}
-
-#enzochat{
-	position: absolute;
-	left: 1%;
-	top: 20%;
-	border: 3px solid gray;
-	background-color: gray;
-}
-
-#yourchat{
-	position: absolute;
-	right: 1%;
-	top: 30%;
-	border: 3px lightgray;
-	background-color: lightgray;
+.menu-icon{
+	width:  25px;
+	cursor:  pointer;
 }
