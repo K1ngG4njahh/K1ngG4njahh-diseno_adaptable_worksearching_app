@@ -7,33 +7,62 @@
 	<link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-	<img src="imgs/house1.png">
-	<h1>Work name:</h1>
-	<h2>Mc Donalds, at 5th avenue, NY</h2>
-	<a href="workinfo.html">
-		<img src="imgs/rectangle1.png" img id="workinfo" class="image">
-  </a>
-  <a href="likedjob.html">
-		<img src="imgs/corazon1.png" img id="likedjob" class="image">
-  </a>
-  <a href="checkedjob.html">
-		<img src="imgs/check1.png" img id="checkedjob" class="image">
-  </a>
-  <a href="dislikedjop.html">
-		<img src="imgs/cross1.png" img id="dislikedjob" class="image">
-  </a>
-	 <a href="profile.html">
-    <img src="imgs/menu-icon1.png" img id="profile" class="image">
-  </a>
-  <a href="messages.html">
-    <img src="imgs/chat1.png" img id="messages" class="image">
-  </a>
-  <a href="history.html">
-    <img src="imgs/reloj1.png" img id="history" class="image">
-  </a>
-  <a href="config.html">
-    <img src="imgs/gear.png" img id="config" class="image">
-  </a>
+    <div class= "container">
+        <div class = "navbar">
+            <img src="imgs/house1.png" class = "logo">
+            <nav>
+                <ul id="menuList">
+                    <li><a href="">Messages</a></li>
+                    <li><a href="">Work History</a></li>
+                    <li><a href="">Config</a></li>
+                    <li><a href="">Profile</a></li>
+                </ul>
+            </nav>
+            <img src="imgs/menu-icon1.png" class = "menu-icon" onclick="togglemenu()">
+        </div>
 
+        <div class="row">
+            
+            <div class="col-1">
+                <h2>Mc Donalds<br>5th Avenue</h2>
+                <h3>Looking for: Community Manager</h3>
+                <p>Salary:</p>
+                <h4>$10.50 per Hour</h4>
+                <button type="button">Work Info <img src = "imgs/rectangle1.png" </button>
+            </div>
+        
+            <div class="col-2">
+                <img src="imgs/McLogo.png" class="CompanyLogo">
+                <div class="color-box"></div>
+                <div class="add-btn">
+                    <img src="imgs/check2.png">
+                    <p><small>Apply for Job</small></p>
+                    <img src="imgs/cross2.png">
+                    <p><small>Reject Job</small></p>
+                </div>
+            </div>
+            
+        </div>
+        
+    </div>
+
+        <script>
+
+            var menuList = document.getElementById("menuList");
+            menuList.style.maxHeight = "0px";
+
+            function togglemenu(){
+        
+                if (menuList.style.maxHeight == "0px")
+                    {
+                        menuList.style.maxHeight = "130px";
+                    }
+                else
+                    {
+                        menuList.style.maxHeight = "0px";
+                    }
+        }
+        </script>
+    
 </body>
 </html>

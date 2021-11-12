@@ -1,92 +1,199 @@
 body{
-	font-family: arial;
-	text-align: center;
+	font-family: sans-serif;
+	margin: 0;
+	padding: 0;
 }
-.boton{
-	width: 20%;
-	height: 50px;
-	color: black;
-	border-radius: 15px;
-	border: 3px solid white;
+.container{
+	width: 100%;
+	min-height: 100vh;
+	padding-left: 8%;
+	padding-right: 8%;
+	box-sizing: border-box;
+	overflow:  hidden;
 }
-
-.image{
+.navbar{
+	width: 100%;
+	display:  flex;
+	align-items: center;
 }
-
-.text{
+.logo{
+	width: 50px;
+	cursor:  pointer;
+	margin: 30px 0;
+}
+.menu-icon{
+	width:  25px;
+	cursor:  pointer;
+	display: none;
+}
+nav{
+	flex: 1;
+	text-align: right;
+}
+nav ul li{
+	list-style: none;
+	display: inline-block;
+	margin-right: 30px;
+}
+nav ul li a{
+	text-decoration: none;
+	color: #000;
+	font-size: 14px;
+}
+nav ul li a:hover{
+	color: darkgreen;
+}
+.row{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 100px 0;
+}
+.col-1{
+	flex-basis: 40%;
+	position: relative;
+	margin-left: 50px;
+}
+.col-1 h2{
+	font-size: 54px;
+}
+.col-1 h3{
+	font-size: 30px;
+	color: #707070;
+	font-weight: 100;
+	margin: 20px 0 10px
+}
+.col-1 p{
+	font-size: 16px;
+	color: #b7b7b7;
+}
+.col-1 h4{
+	margin: 30px 0;
+	font-size: 20px;
+}
+.col-1 h5{
+	font-size: 30px;
+	color: #707070;
+	font-weight: 100;
+	margin: 20px 0 10px
+}
+.col-1 h6{
+	font-size: 30px;
+	font-weight: 100;
+	margin: 20px 0 10px
+}
+button{
+	width: 140px;
+	border: 0;
+	padding: 12px 10px;
+	outline: none;
+	color: #fff;
+	background: linear-gradient(to right, hsl(140, 90%, 24%), hsl(136, 100%, 77%));
+	border-radius: 6px;
+	cursor: pointer;
+	transition: width 0.5s;
+}
+button img{
+	width: 10px;
+	display: none;
+}
+button:hover{
+	width: 160px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+button:hover img{
+	display: block;
+}
+.col-2{
+	position: relative;
+	flex-basis: 60%;
+	display: flex;
+	align-items: center;
+}
+.col-2 .CompanyLogo{
+	width: 90%;
+}
+.color-box{
+	position: absolute;
+	right: 0;
+	top: 1;
+	background: linear-gradient(hsl(140, 90%, 24%), hsl(136, 100%, 77%));
+	border-radius: 20px 0 0 20px;
+	height: 110%;
 	width: 80%;
-	color: black;
-	border-radius: 16px;
+	z-index: -1;
+	transform: translateX(150px);
+}
+.add-btn img{
+	width: 35px;
+	margin-bottom: 5px;
+}
+.add-btn{
+	text-align: center;
+	color: #fff;
+	cursor: pointer;
 }
 
-#profile{
-	position:absolute; 
-	top: 2%;
-	left: 2%;
-}
+@media only screen and (max-width:700px){
 
-#history{
-	position:absolute; 
-	top: 2%;
-	right: 2%;
-}
+	nav ul{
+		width: 100%;
+		background: linear-gradient(hsl(140, 90%, 24%), hsl(136, 100%, 77%));
+		position: absolute;
+		top: 75px;
+		right: 0;
+		z-index: 2;
+	}
 
-#messages{
-	position:absolute; 
-	bottom: 2%;
-	right: 2%;
-}
+	nav ul li{
+		display: block;
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
 
-#config{
-	position:absolute; 
-	bottom: 1%;
-	left: 1%;
-	width: 80px;
-}
+	nav ul li a{
+		color: #fff;
+	}
 
-#workinfo{
-	position: absolute;
-	top: 60%;
-	left: 40%;
-}
+	.menu-icon{
+		display: block;
+	}
 
-#likedjob{
-	position: absolute;
-	top: 60%;
-	left: 60%;
-}
+	#menuList{
+		overflow: hidden;
+		transition: 00.5s;
+	}
 
-#checkedjob{
-	position: absolute;
-	top: 70%;
-	left: 55%;
-}
+	.row{
+		flex-direction: column-reverse;
+		margin: 50px 0;
+	}
+	.col-2{
+		flex-basis: 100%;
+		margin-bottom: 50px;
+	}
 
-#dislikedjob{
-	position: absolute;
-	top: 70%;
-	left: 45%;
-}
-
-#goback{
-	position: absolute;
-	top: 2%;
-	left: 1%;
-	width: 45px;
-}
-
-#enzochat{
-	position: absolute;
-	left: 1%;
-	top: 20%;
-	border: 3px solid gray;
-	background-color: gray;
-}
-
-#yourchat{
-	position: absolute;
-	right: 1%;
-	top: 30%;
-	border: 3px lightgray;
-	background-color: lightgray;
+	.col-2 .CompanyLogo{
+		width: 77%;
+	}
+	.color-box{
+		transform: translateX(75px);
+	}
+	.col-1{
+		flex-basis: 100%;
+	}
+	.col-1 h2{
+		font-size: 35px;
+	}
+	.col-2 h3{
+		font-size: 15px;
+	}
+	.col-1 h5{
+		font-size: 35px;
+	}
+	.col-1 h6{
+		font-size: 40px;
+	}
 }
