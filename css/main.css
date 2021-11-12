@@ -157,6 +157,9 @@ button:hover img{
 .col-3 .ProfilePicture{
 	width: 50%;
 }
+.col-3 .settingsPicture{
+	width: 40%;
+}
 .color-box{
 	position: absolute;
 	right: 0;
@@ -238,6 +241,9 @@ button:hover img{
 
 	.col-3 .ProfilePicture{
 		width: 55%;
+	}
+	.col-3 .settingsPicture{
+		width: 45%;
 	}
 	.color-box{
 		transform: translateX(75px);
