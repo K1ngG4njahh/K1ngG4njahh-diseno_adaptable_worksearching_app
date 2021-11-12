@@ -7,23 +7,53 @@
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-    <h1>Ronald McDonald</h1>
-    <a href="chat.html"><img src="imgs/ellipse14.png"></a>
+     <div class= "container">
+        <div class = "navbar">
+            <img src="imgs/arrow1.png" class = "logo">
+        </div>
 
-    <h2>Age:</h2> <h3>24</h3>
+        <div class="row">
+            
+            <div class="col-1">
+                <h2>Mc Donalds<br>5th Avenue</h2>
+                <h3>Looking for: Community Manager</h3>
+                <p>Salary:</p>
+                <h4>$10.50 per Hour</h4>
+                <button type="button">Work Info <img src = "imgs/rectangle1.png" </button>
+            </div>
+        
+            <div class="col-2">
+                <img src="imgs/McLogo.png" class="CompanyLogo">
+                <div class="color-box"></div>
+                <div class="add-btn">
+                    <img src="imgs/check2.png">
+                    <p><small>Apply for Job</small></p>
+                    <img src="imgs/cross2.png">
+                    <p><small>Reject Job</small></p>
+                </div>
+            </div>
+            
+        </div>
+        
+    </div>
 
-    <h2>Gender:</h2> <h3>M</h3>
+        <script>
 
-    <h2>Likes:</h2> <h3>everything</h3>
+            var menuList = document.getElementById("menuList");
+            menuList.style.maxHeight = "0px";
 
-    <h2>Dislikes:</h2> <h3>nothing</h3>
-
-
-    <hr>
-
-    <a href="index.html">
-        <img src="imgs/arrow1.png" img id="goback" class="image">
-    </a>
-
+            function togglemenu(){
+        
+                if (menuList.style.maxHeight == "0px")
+                    {
+                        menuList.style.maxHeight = "130px";
+                    }
+                else
+                    {
+                        menuList.style.maxHeight = "0px";
+                    }
+        }
+        </script>
+    
 </body>
 </html>
