@@ -9,8 +9,58 @@
 <body>
     <div class= "container">
         <div class = "navbar">
-            <img src="imgs/McLogo.png" class = "logo">
-            <nav></nav>
-            <img src="imgs/menu-icon1.png" class = "menu-icon">
+            <img src="imgs/house1.png" class = "logo">
+            <nav>
+                <ul id="menuList">
+                    <li><a href="">Messages</a></li>
+                    <li><a href="">Work History</a></li>
+                    <li><a href="">Config</a></li>
+                    <li><a href="">Profile</a></li>
+                </ul>
+            </nav>
+            <img src="imgs/menu-icon1.png" class = "menu-icon" onclick="togglemenu()">
+        </div>
+
+        <div class="row">
+            
+            <div class="col-1">
+                <h2>Mc Donalds<br>5th Avenue</h2>
+                <h3>Looking for: Community Manager</h3>
+                <p>Salary:</p>
+                <h4>$10.50 per Hour</h4>
+                <button type="button">Work Info <img src = "imgs/rectangle1.png" </button>
+            </div>
+        
+            <div class="col-2">
+                <img src="imgs/McLogo.png" class="CompanyLogo">
+                <div class="color-box"></div>
+                <div class="add-btn">
+                    <img src="imgs/check2.png">
+                    <p><small>Apply for Job</small></p>
+                </div>
+            </div>
+            
+        </div>
+        
+    </div>
+
+        <script>
+
+            var menuList = document.getElementById("menuList");
+            menuList.style.maxHeight = "0px";
+
+            function togglemenu(){
+        
+                if (menuList.style.maxHeight == "0px")
+                    {
+                        menuList.style.maxHeight = "130px";
+                    }
+                else
+                    {
+                        menuList.style.maxHeight = "0px";
+                    }
+        }
+        </script>
+    
 </body>
 </html>
