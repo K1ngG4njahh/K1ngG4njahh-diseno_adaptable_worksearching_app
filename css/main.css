@@ -77,6 +77,9 @@ nav ul li a:hover{
 	font-weight: 100;
 	margin: 20px 0 10px
 }
+.col-1 button{
+	text-decoration: none;
+}
 .col-4 h6{
 	font-size: 30px;
 	font-weight: 100;
@@ -297,6 +300,9 @@ button:hover img{
 	.color-box2{
 		transform: translateX(-115px);
 	}
+	.color-box3{
+		transform: translateX(-115px);
+	}
 	.col-1{
 		flex-basis: 100%;
 	}
@@ -327,5 +333,191 @@ button:hover img{
 	}
 	.col-4 h6{
 		font-size: 40px;
+	}
+}
+
+@media only screen and (min-width: 320px) and (max-width:540px){
+
+	nav ul{
+		width: 100%;
+		background: linear-gradient(hsl(140, 90%, 24%), hsl(136, 100%, 77%));
+		position: absolute;
+		top: 75px;
+		right: 0;
+		z-index: 2;
+	}
+
+	nav ul li{
+		display: block;
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+
+	nav ul li a{
+		color: #fff;
+	}
+
+	.menu-icon{
+		display: block;
+	}
+
+	#menuList{
+		overflow: hidden;
+		transition: 00.5s;
+	}
+
+	.row{
+		flex-direction: column-reverse;
+		margin: 50px 0;
+	}
+	.col-2{
+		flex-basis: 100%;
+		margin-bottom: 50px;
+	}
+
+	.col-2 .CompanyLogo{
+		width: 77%;
+	}
+	.col-3{
+		flex-basis: 100%;
+		margin-bottom: 50px;
+	}
+
+	.col-3 .ProfilePicture{
+		width: 55%;
+	}
+	.col-3 .settingsPicture{
+		width: 45%;
+	}
+	.color-box{
+		transform: translateX(75px);
+	}
+	.color-box2{
+		transform: translateX(-115px);
+	}
+	.col-1{
+		flex-basis: 100%;
+	}
+	.col-1 h2{
+		font-size: 35px;
+	}
+	.col-2 h3{
+		font-size: 15px;
+	}
+	.col-1 h5{
+		font-size: 35px;
+	}
+	.col-1 h6{
+		font-size: 40px;
+	}
+
+	.col-4{
+		flex-basis: 100%;
+	}
+	.col-4 h2{
+		font-size: 35px;
+	}
+	.col-4 h3{
+		font-size: 15px;
+	}
+	.col-4 h5{
+		font-size: 35px;
+	}
+	.col-4 h6{
+		font-size: 40px;
+	}
+}
+
+@media only screen and (min-width: 541px) and (max-width:1024px){
+
+	nav ul{
+		width: 100%;
+		background: linear-gradient(hsl(140, 90%, 24%), hsl(136, 100%, 77%));
+		position: absolute;
+		top: 75px;
+		right: 0;
+		z-index: 2;
+	}
+
+	nav ul li{
+		display: block;
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+
+	nav ul li a{
+		color: #fff;
+	}
+
+	.menu-icon{
+		display: block;
+	}
+
+	#menuList{
+		overflow: hidden;
+		transition: 00.5s;
+	}
+
+	.row{
+		flex-direction: column-reverse;
+		margin: 50px 0;
+	}
+	.col-2{
+		flex-basis: 100%;
+		margin-bottom: 60px;
+	}
+
+	.col-2 .CompanyLogo{
+		width: 88%;
+	}
+	.col-3{
+		flex-basis: 100%;
+		margin-bottom: 50px;
+	}
+
+	.col-3 .ProfilePicture{
+		width: 45%;
+	}
+	.col-3 .settingsPicture{
+		width: 75%;
+		transform: translateX(-10px);
+	}
+	.color-box{
+		transform: translateX(75px);
+	}
+	.color-box2{
+		width: 400%;
+		transform: translateX(-460px);
+	}
+	.col-1{
+		flex-basis: 100%;
+	}
+	.col-1 h2{
+		font-size: 45px;
+	}
+	.col-2 h3{
+		font-size: 25px;
+	}
+	.col-1 h5{
+		font-size: 45px;
+	}
+	.col-1 h6{
+		font-size: 50px;
+	}
+
+	.col-4{
+		flex-basis: 100%;
+	}
+	.col-4 h2{
+		font-size: 45px;
+	}
+	.col-4 h3{
+		font-size: 25px;
+	}
+	.col-4 h5{
+		font-size: 45px;
+	}
+	.col-4 h6{
+		font-size: 50px;
 	}
 }
